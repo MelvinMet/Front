@@ -4,7 +4,7 @@
   "workspaces": {
     "": {
       "name": "learnfront",
-      "devDependencies": {
+      "dependencies": {
         "vite": "^8.3.0",
       },
     },
