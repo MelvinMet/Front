@@ -1,13 +1,7 @@
 <script setup>
 import { computed, ref } from 'vue';
 import ItemList from '../components/ItemList.vue';
-let i = 0;
-let items = ref([
-  {id:i++, text:'Piim', isDone: false, importance: 'high'},
-  {id:i++, text:'Viin', isDone: true, importance: 'low'},
-  {id:i++, text:'Sai', isDone: false, importance: 'medium'},
-  {id:i++, text:'Mac', isDone: true, importance: 'low'},
-]);
+import { items, addItem } from '../items.js';
 let newItem = ref('');
 let newImportance = ref('medium');
 
@@ -55,4 +49,5 @@ let toDoItems = computed(() => sortedItems.value.filter(item => !item.isDone));
 </template>
 
 <style></style>
+
 
