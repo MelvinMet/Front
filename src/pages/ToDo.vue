@@ -7,7 +7,7 @@ let newImportance = ref('medium');
 
 function add(){
   if(newItem.value.trim() !== '') {
-    items.value.push({id:i++, text: newItem.value.trim(), isDone: false, importance: 'high'});
+    addItem(newItem.value.trim(), newImportance.value);
   }
   newItem.value = '';
 }
@@ -49,5 +49,6 @@ let toDoItems = computed(() => sortedItems.value.filter(item => !item.isDone));
 </template>
 
 <style></style>
+
 
 
