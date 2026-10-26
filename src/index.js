@@ -1,4 +1,6 @@
-import math from './math.js';
+import { createApp } from 'vue';
 
-let answer = math.add(6,5);
-console.log(answer);
+import App from './App.vue';
+
+const app = createApp(App);
+app.mount('#app');

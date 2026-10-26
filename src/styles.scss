@@ -1,6 +1,5 @@
-@use "sass:color";
-$bgcolor: coral;
-body {
-    background-color: $bgcolor;
-}
+@use "bulma/sass" with (
+    $primary: coral
+);
+
 
